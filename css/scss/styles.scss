@@ -1,0 +1,158 @@
+@import "./null_styles/null-styles";
+//@import "./test.scss";
+
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+	font-family: "Balqis";
+	// адрес шрифта и тип
+	src: url("../../fonts/Balqis.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+
+	src: url("../../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoLI";
+
+	src: url("../../fonts/RobotoCondensed-LightItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: 300;
+}
+
+$back-color: #777575;
+$base-color: #444a53;
+$color-blue: rgb(27, 55, 60);
+$color-grey: rgb(195, 195, 195);
+$color-black: #000000;
+$color-gold: #e2ab3f;
+
+body {
+	background-color: $back-color;
+	color: $color-grey;
+	height: 90vh;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.hero {
+	position: relative;
+	height: 100vh;
+	background: url("../../images/hero-back.jpg") center / cover no-repeat;
+	// position	: relative;
+
+	.nav {
+		// background-color: #8c6868;
+		display: flex;
+		justify-content: space-between;
+
+		align-items: center;
+
+		color: $color-black;
+		font-family: "Roboto";
+		font-size: 18px;
+		.menu {
+			margin-top: 20px;
+			display: flex;
+			justify-content: flex-start;
+			gap: 35px;
+		}
+		#phone {
+			align-self: flex-end;
+			// background-color: red;
+			img {
+				width: 20px;
+			}
+		}
+	}
+
+	.logo_text {
+		// width: 430px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: block;
+		// margin: auto;
+		color: $color-black;
+
+		// text-align: center;
+		// background-color: #d5abab;
+		h1 {
+			font-family: Balqis;
+			font-size: 170px;
+		}
+		p {
+			display: block;
+			position: relative;
+			top: -20px;
+			font-family: "RobotoLI";
+			font-size: 35px;
+			text-align: right;
+			// font-weight: 200;
+			// font-style: italic;
+		}
+	}
+}
+
+section {
+	margin-top: 120px;
+}
+
+.theme {
+	display: block;
+	width: 310px;
+	// background-color: rebeccapurple;
+	h2 {
+		font-family: Balqis;
+		font-size: 65px;
+		color: $color-gold;
+	}
+	p {
+		font-family: "Roboto";
+		font-size: 16px;
+		text-align: right;
+		font-weight: 200;
+		font-style: italic;
+		color: $color-black;
+	}
+}
+
+.carousel_block {
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	// flex-wrap: wrap;
+	background-color: rebeccapurple;
+	.carousel {
+		display: block;
+		width: 50%;
+		img {
+			position: absolute;
+			left: 0;
+			width: 45%;
+		}
+	}
+	.text {
+		background-color: rgb(113, 65, 65);
+		width: 100%;
+		color: $color-black;
+		// margin-left: 40px;
+		p {
+			margin: 40px 0;
+			font-family: "Roboto";
+			font-size: 12px;
+			text-align: left;
+			font-weight: 200;
+			line-height: 120%;
+		}
+	}
+}

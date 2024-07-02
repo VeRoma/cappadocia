@@ -1,0 +1,211 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*удаление крестика при вводе в Input в IE */
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Balqis";
+  src: url("../../fonts/Balqis.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RobotoLI";
+  src: url("../../fonts/RobotoCondensed-LightItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 300;
+}
+body {
+  background-color: #777575;
+  color: rgb(195, 195, 195);
+  height: 90vh;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("../../images/hero-back.jpg") center/cover no-repeat;
+}
+.hero .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+.hero .nav .menu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 35px;
+}
+.hero .nav #phone {
+  align-self: flex-end;
+}
+.hero .nav #phone img {
+  width: 20px;
+}
+.hero .logo_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #000000;
+}
+.hero .logo_text h1 {
+  font-family: Balqis;
+  font-size: 170px;
+}
+.hero .logo_text p {
+  display: block;
+  position: relative;
+  top: -20px;
+  font-family: "RobotoLI";
+  font-size: 35px;
+  text-align: right;
+}
+
+section {
+  margin-top: 120px;
+}
+
+.theme {
+  display: block;
+  width: 310px;
+}
+.theme h2 {
+  font-family: Balqis;
+  font-size: 65px;
+  color: #e2ab3f;
+}
+.theme p {
+  font-family: "Roboto";
+  font-size: 16px;
+  text-align: right;
+  font-weight: 200;
+  font-style: italic;
+  color: #000000;
+}
+
+.carousel_block {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rebeccapurple;
+}
+.carousel_block .carousel {
+  display: block;
+  width: 50%;
+}
+.carousel_block .carousel img {
+  position: absolute;
+  left: 0;
+  width: 45%;
+}
+.carousel_block .text {
+  background-color: rgb(113, 65, 65);
+  width: 100%;
+  color: #000000;
+}
+.carousel_block .text p {
+  margin: 40px 0;
+  font-family: "Roboto";
+  font-size: 12px;
+  text-align: left;
+  font-weight: 200;
+  line-height: 120%;
+}/*# sourceMappingURL=styles.css.map */
